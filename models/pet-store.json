@@ -1,11 +1,17 @@
 {
   "pet" : {
-  "name":"Cookie",
-  "fullname":"Cookie Chubbz",
+  "name":"Sir Cookies",
   "image":"/chubbz.jpg",
-  "joined":2016,
+  "posted":2016,
   "age":"6",
   "gender": "Male",
-  "description":"A love-dovey cutizie boy"
+  "breed": "pug",
+  "description":"A love-dovey cutizie boy",
+  "company": { 
+    "cName": "Byrne's Boarding Kennels",
+    "cLocation": "Waterford",
+    "cPhone": "087 124 7255",
+    "cRating": "4.9🌟"
+  }
   }
 }
