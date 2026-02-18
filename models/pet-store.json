@@ -1,0 +1,11 @@
+{
+  "pet" : {
+  "name":"Cookie",
+  "fullname":"Cookie Chubbz",
+  "image":"/chubbz.jpg",
+  "joined":2016,
+  "age":"6",
+  "gender": "Male",
+  "description":"A love-dovey cutizie boy"
+  }
+}
