@@ -1,10 +1,16 @@
 {
   "info": {
-    "message": "",
-    "creators": {
+    "message": "I hope you find our work useful for you your journey to finding your BFF😁",
+    "creators": [{
       "name": "Danilo Silva",
       "role": "SSD student",
       "location": "SETU - Waterford"
+    },
+    {
+      "name": "Jennifer Lopez",
+      "role": "Actress",
+      "location": "Hollywood"
     }
+  ]
   }
 }

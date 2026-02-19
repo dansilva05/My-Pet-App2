@@ -1,17 +1,48 @@
 {
-  "pet" : {
-  "name":"Sir Cookies",
-  "image":"/chubbz.jpg",
-  "posted":2016,
-  "age":"6",
-  "gender": "Male",
-  "breed": "pug",
-  "description":"A love-dovey cutizie boy",
-  "company": { 
-    "cName": "Byrne's Boarding Kennels",
-    "cLocation": "Waterford",
-    "cPhone": "087 124 7255",
-    "cRating": "4.9🌟"
+  "pet" : [{
+    "name":"Sir Cookies",
+    "image":"/chubbz.jpg",
+    "posted":2016,
+    "age":"6",
+    "gender": "Male",
+    "breed": "pug",
+    "description":"A love-dovey cutizie boy. A little round, but that's just more of him to enjoy.",
+    "company": { 
+        "cName": "Byrne's Boarding Kennels",
+        "cLocation": "Waterford",
+        "cPhone": "087 124 7255",
+        "cRating": "4.9🌟"
+    }
+  },
+  {
+    "name":"Luna",
+    "image":"/luna.jpg",
+    "posted":2018,
+    "age":"10",
+    "gender": "Female",
+    "breed": "Unknown",
+    "description":"A lovely shy girl (just kidding, she is the heart of the party)",
+    "company": { 
+        "cName": "Carlow Kilkenny Dog Shelter",
+        "cLocation": "Waterford",
+        "cPhone": "059 972 6785",
+        "cRating": "4.3🌟"
+    }
+  },
+  {
+    "name":"Destroyer",
+    "image":"/chubbz.jpg",
+    "posted":2016,
+    "age":"6",
+    "gender": "Male",
+    "breed": "Cane Corso",
+    "description":"'The Destroyer' hahaha, the only thing he does is melt our hearts with love🥹",
+    "company": { 
+        "cName": "Byrne's Boarding Kennels",
+        "cLocation": "Waterford",
+        "cPhone": "087 124 7255",
+        "cRating": "4.9🌟"
+    }
   }
-  }
+  ]
 }

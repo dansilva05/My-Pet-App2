@@ -5,30 +5,33 @@
   
     <h2>Find Your Fluffy Friend</h2>
         <!-- I have to make it work with FindAll function -->
-      <input type="text" placeholder="Search" style="margin-left: 30px;">
+      <input type="text" placeholder="Search" style="margin: 0px 0px 30px 30px;">
 
-    <!-- Plenty of animal posts -->
-    <div class="ui centered card">
-        <div class="image">
-            <img src="{{pet.image}}">
+    <!-- Plenty of animal cards/"posts" -->
+    <div class="ui three stackable cards">
+  {{#each pet}}
+    <div class="ui card">
+      <div class="image">
+        <img class="ui fluid image" src="{{image}}" alt="{{name}}">
+      </div>
+
+      <div class="content">
+        <div class="header">{{name}}</div>
+        <div class="description">{{description}}</div>
+
+        <div class="meta">
+          {{gender}}, {{age}}, {{breed}}<br>
+          {{company.cName}}, {{company.cRating}}<br>
+          {{company.cLocation}}<br>
+          {{company.cPhone}}
         </div>
-        <div class="content">
-            <a class="header">{{pet.name}}</a>
-            <div class="description">
-            {{pet.description}}
-            </div>
-            <!-- I might reorder this later -->
-            <div class="meta" style="margin-top:2px; font-style:italic">
-                {{pet.gender}}, {{pet.age}}, {{pet.breed}}<br>
-                {{pet.company.cName}}, {{pet.company.cRating}}<br>
-                {{pet.company.cLocation}}<br>
-                {{pet.company.cPhone}}
-            </div>
-        </div>
-        <div class="extra content">
-            <span>
-                Posted in {{pet.posted}}
-            </span>
-        </div>
+      </div>
+
+      <div class="extra content">
+        Posted in {{posted}}
+      </div>
     </div>
+  {{/each}}
+</div>
+
 </section>

@@ -3,7 +3,7 @@
 import JsonStore from "./json-store.js";
 
 const petStore = {
-  store: new JsonStore("./models/pet-store.json", { pet: {} }),
+  store: new JsonStore("./models/pet-store.json", { pet: [] }),
   collection: "pet",
 
   getAppInfo() {
