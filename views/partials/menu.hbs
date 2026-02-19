@@ -1,13 +1,19 @@
 <nav class="ui stackable menu">
   
-  <header class="ui header item"> 
-    <a href="/"> My Pet App </a>
+  <header class="ui header item">
+    <a class="brand" href="/"><img class="brand-logo" src="/dog_logo.png" alt="My Pet App" style="width:4em; height:auto;">
+    <span class="brand-text">My Pet App</span>
+    </a>
+
+    <div class="dropdown">
+      <img class="dropdown-img" src="/menu.png" alt="Menu">
+      <div class="dropdown-content">
+          <a id="dashboard" class="item" href="/dashboard"> Your Next Pet </a>
+          <a id="about" class="item" href="/about"> About Us </a>
+          <a id="info" class="item" href="/info"> Some Advice </a>
+      </div> 
+    </div>
   </header>
-  
-  <div class="right menu">
-    <a id="dashboard" class="item" href="/dashboard"> Your Next Pet </a>
-    <a id="about" class="item" href="/about"> About Us </a>
-  </div>
   
 </nav>
 

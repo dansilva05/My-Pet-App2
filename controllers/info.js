@@ -3,17 +3,17 @@
 import petStore from "../models/pet-store.js";
 import logger from "../utils/logger.js";
 
-const dashboard = {
+const info = {
   createView(request, response) {
     logger.info("Dashboard page loading!");
     
     const viewData = {
-      title: "Your Pet Finder",
+      title: "Your Pet Info",
       pet: petStore.getAppInfo(),
     };
     
-    response.render('dashboard', viewData);
+    response.render('info', viewData);
   },
 };
 
-export default dashboard;
+export default info;

@@ -8,7 +8,7 @@ const about = {
     logger.info("About page loading!");
 
     const viewData = {
-      title: "Your Pet App About",
+      title: "About Your Pet App",
       pet: petStore.getAppInfo(),
     };
 

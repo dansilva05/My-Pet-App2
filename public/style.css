@@ -1,4 +1,4 @@
-html {
+/*html {
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -11,4 +11,328 @@ body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
   background-color: lightgrey;
+}*/
+
+/*CSS taken from My Recipe Scrolls and adapted to My Pet App*/
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Helvetica, Arial, sans-serif !important;
+}
+
+body {
+    background-color: #ffd500;
+    background-image: url(../images/scrolls\ background.jpg);
+    line-height: 1.25;
+}
+
+p {
+    color: #2B2B2B;
+}
+
+header {
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px 0 20px;
+    background-color: #5C3B1E;
+    text-align: left;
+}
+
+header>h1 {
+    color: #FAF5EF;
+    padding: 2em 20px 8px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+header>h2 {
+    color: #FAF5EF;
+    padding-bottom: 0;
+    padding-top: 0.25em;
+    margin-bottom: 0;
+    margin-top: 0.25em;
+    padding-left: 35px;
+}
+
+header>p {
+    color: #FAF5EF;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 250%;
+    color: #2B2B2B;
+    padding: 1em 20px 8px;
+    margin: 0;
+}
+
+h2 {
+    color: #2B2B2B;
+    padding-top: 0.5em;
+    padding-left: 20px;
+}
+
+h3 {
+    padding-left: 25px;
+    color: #2B2B2B;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+ color: #ffd500;
+}
+
+nav {
+    width: 100%;
+    background-color: #7D5A3A;
+    padding: 1em 0;
+    margin: 2em 0 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 0 20px;
+}
+
+nav ul li a {
+    color: #FAF5EF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    color: #e0a257;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+main {
+    background-color: #FAF5EF;
+    flex: 5;
+    padding: 1em;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#content {
+    width: 100%;
+    margin-top: 1em;
+}
+
+footer {
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    background-color: #7D5A3A;
+}
+
+footer>p {
+    color: #FAF5EF;
+}
+
+textarea {
+    padding: 0.5em;
+    font-family: inherit;
+    resize: vertical;
+}
+
+dialog {
+    border-radius: 10px;
+    background: #fffdf7;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    padding: 2em;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+dialog input,
+dialog textarea,
+dialog button {
+    padding: 0.75em;
+    font-family: inherit;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #5C3B1E;
+    color: white;
+    border: none;
+    border-radius: 0.25em;
+    padding: 0.75em 1em;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.texts {
+    max-width: 90%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    color: #FAF5EF;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5C3B1E;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.box {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.text-box {
+    flex: 2;
+    min-width: 250px;
+}
+
+.stacker {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+#shaking:hover {
+    position: relative;
+    animation: animation 4s forwards ease-in-out;
+}
+
+@keyframes animation {
+    10% {
+        translate: 3px 20px;
+    }
+
+    20% {
+        translate: 0px -15px;
+    }
+
+    30% {
+        translate: -2px 15px;
+    }
+
+    40% {
+        translate: 2px -17px;
+    }
+
+    50% {
+        translate: -2px 20px;
+    }
+
+    60% {
+        translate: 0px -10px;
+    }
+
+    70% {
+        translate: 1px 13px;
+    }
+
+    80% {
+        translate: -1px -10px;
+    }
+
+    90% {
+        translate: 0px 5px;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+.comment-view {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 1em 12px 0 5px;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo{
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+
+.dropdown {
+    position: relative;
+    margin-left: auto;
+}
+
+.dropdown-img {
+  width: 32px;
+  height: auto;
+  display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    border-radius: 10px;
+    background-color: #ffd500;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
