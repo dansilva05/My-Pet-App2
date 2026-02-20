@@ -3,7 +3,7 @@
     "name":"Sir Cookies",
     "image":"/chubbz.jpg",
     "posted":2016,
-    "age":"6",
+    "age":6,
     "gender": "Male",
     "breed": "pug",
     "description":"A love-dovey cutizie boy. A little round, but that's just more of him to enjoy.",
@@ -18,7 +18,7 @@
     "name":"Luna",
     "image":"/luna.jpg",
     "posted":2018,
-    "age":"10",
+    "age":10,
     "gender": "Female",
     "breed": "Unknown",
     "description":"A lovely shy girl (just kidding, she is the heart of the party)",
@@ -31,12 +31,27 @@
   },
   {
     "name":"Destroyer",
-    "image":"/chubbz.jpg",
-    "posted":2016,
-    "age":"6",
+    "image":"/destroyer.jpg",
+    "posted":2017,
+    "age":3,
     "gender": "Male",
     "breed": "Cane Corso",
     "description":"'The Destroyer' hahaha, the only thing he does is melt our hearts with love🥹",
+    "company": { 
+        "cName": "Byrne's Boarding Kennels",
+        "cLocation": "Waterford",
+        "cPhone": "087 124 7255",
+        "cRating": "4.9🌟"
+    }
+  },
+  {
+    "name":"Beethoven",
+    "image":"/beethoven.jpg",
+    "posted":2023,
+    "age":10,
+    "gender": "Male",
+    "breed": "St. Bernard",
+    "description":"A lovely old-man disguised as dog, he is very calm calm and very good with children. The best companion you can wish",
     "company": { 
         "cName": "Byrne's Boarding Kennels",
         "cLocation": "Waterford",
