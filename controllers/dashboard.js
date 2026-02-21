@@ -9,7 +9,7 @@ const dashboard = {
     
     const viewData = {
       title: "Your Pet Finder",
-      pet: petStore.getAppInfo(),
+      shelter: petStore.getAppInfo(),
     };
     
     response.render('dashboard', viewData);

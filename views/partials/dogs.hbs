@@ -1,0 +1,27 @@
+<input id="search" type="text" placeholder="Search" style="margin: 0px 0px 30px 30px;">
+
+<!-- Plenty of animal cards/"posts" -->
+<div class="ui three stackable cards">
+    {{#each shelter.pet}}
+    <div class="ui card">
+        <div class="image">
+            <img class="ui fluid image" src="{{image}}" alt="{{name}}">
+        </div>
+
+        <div class="content">
+            <div class="header">{{name}}</div>
+            <div class="description">{{description}}</div>
+
+            <div class="meta">
+                Breed: {{breed}}<br>
+                Gender: {{gender}}<br>
+                Age: {{age}}
+            </div>
+        </div>
+
+        <div class="extra content">
+            Posted in {{posted}}
+        </div>
+    </div>
+    {{/each}}
+</div>

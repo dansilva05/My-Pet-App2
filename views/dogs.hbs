@@ -1,0 +1,22 @@
+{{> menu}}
+
+<section class="ui left aligned middle aligned segment">
+    <div class="ui header">
+        <h2 class="ui header">{{shelter.cName}}</h2>
+        <p>
+          <strong>Location:</strong> {{shelter.cLocation}}<br>
+          <strong>Phone:</strong> {{shelter.cPhone}}<br>
+          <strong>Rating:</strong> {{shelter.cRating}}
+        </p>
+    </div>
+
+    <div class="ui divider"></div>
+
+    {{> dogs}}
+
+    <div style="margin-top: 20px;">
+      <a class="ui button" href="/dashboard">Back to shelters</a>
+    </div>
+</section>
+
+{{> footer}}

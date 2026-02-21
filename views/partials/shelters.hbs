@@ -1,0 +1,27 @@
+  
+    <h2>Find Your Fluffy Friend</h2>
+        <!-- Search filters the cards -->
+      <input id="search" type="text" placeholder="Search" style="margin: 0px 0px 30px 30px;">
+
+    <!-- Plenty of animal cards/"posts" -->
+    <div class="ui three stackable cards">
+  {{#each shelter}}
+    <div class="ui card">
+      <div class="image">
+        <a href="/dogs/{{id}}">
+        <img class="ui fluid image" src="{{cImage}}" alt="{{cName}}">
+        </a>
+      </div>
+
+      <div class="content">
+        <div class="header"><a href="/dogs/{{id}}">{{cName}}</a></div>
+
+        <div class="meta">
+          {{cRating}}<br>
+          {{cLocation}}<br>
+          {{cPhone}}
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
