@@ -8,13 +8,11 @@ import start from './controllers/start.js';
 import dashboard from './controllers/dashboard.js';
 import dogs from './controllers/dogs.js';
 import about from './controllers/about.js';
-import info from './controllers/info.js';
 
 router.get('/', start.createView);
 router.get('/dashboard', dashboard.createView);
 router.get('/dogs/:id', dogs.createView)
 router.get('/about', about.createView);
-router.get('/info', info.createView);
 
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
 
