@@ -26,8 +26,29 @@
 
 
       <h2 style="text-align:center;">Get to Know Us</h2>
-    <!-- more to be added soon -->
+      <p style="text-align:center;">{{info.message}}</p>
+    <div class="ui grid stackable middle aligned">
+  <div class="row">
+    <div class="eight wide column">
+      {{#each info.creators}}
+      <div class="ui grid stackable middle aligned segment">
+        <div class="ui six wide column">
+        <img class="ui fluid image" src="{{img}}" style="border-radius:20px;">
+        </div>
+      <div class="ui ten wide column segment">
+        <p>
+        <strong>{{name}}</strong><br>
+          Role: <em>{{role}}</em><br>
+          Location: <em>{{location}}</em>
+        </p>
+      </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="eight wide column">
+      <img class="ui fluid image" src="{{info.map}}" alt="Waterford IE Map" style="border-radius:20px;">
+    </div>
+  </div>
+</div>
 
 </section>
-
-{{> footer }}

@@ -1,5 +1,5 @@
 import logger from "../utils/logger.js";
-import petStore from "../models/pet-store.js"
+import appStore from "../models/app-store.js"
 
 'use Strict';
 
@@ -9,7 +9,7 @@ const about = {
 
     const viewData = {
       title: "About Your Pet App",
-      pet: petStore.getAppInfo(),
+      info: appStore.getAppInfo(),
     };
 
     response.render('about', viewData);   

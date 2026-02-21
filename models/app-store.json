@@ -1,13 +1,16 @@
 {
   "info": {
     "message": "I hope you find our work useful for you your journey to finding your BFF😁",
+    "map": "/map.jpg",
     "creators": [{
       "name": "Danilo Silva",
+      "img": "/anon.png",
       "role": "SSD student",
       "location": "SETU - Waterford"
     },
     {
       "name": "Jennifer Lopez",
+      "img": "/jenn.jpg",
       "role": "Actress",
       "location": "Hollywood"
     }
