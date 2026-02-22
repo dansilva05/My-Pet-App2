@@ -8,7 +8,7 @@ const start = {
     logger.info("Start page loading!");
     
     const viewData = {
-      title: "You Pet Friend",
+      title: "Your Pet Friend",
       info: appStore.getAppInfo()
     };
     
