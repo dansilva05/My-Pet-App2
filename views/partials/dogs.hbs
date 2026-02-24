@@ -2,6 +2,13 @@
 
 <!-- Plenty of animal cards/"posts" -->
 <div class="ui three stackable cards">
+    {{#unless shelter.pet}}
+    <div style="padding-left:30px;">
+        <strong>
+            No Dogs found for this shelter :/
+        </strong>
+    </div>
+    {{else}}
     {{#each shelter.pet}}
     <div class="ui card">
         <div class="image">
@@ -24,4 +31,6 @@
         </div>
     </div>
     {{/each}}
+
+    {{/unless}}
 </div>

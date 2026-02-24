@@ -83,6 +83,16 @@
           "description": "A senior citizen looking for comfortable and loving home to live. The most sweet company you can have on a rainy day🥹"
         }
       ]
+    },
+    {
+      "id": "4",
+      "cName": "Random",
+      "cImage": "",
+      "cLocation": "Empty shelter example",
+      "cPhone": "No one knows",
+      "cRating": "0🌟",
+      "pet": [
+      ]
     }
   ]
 }
