@@ -86,11 +86,11 @@
     },
     {
       "id": "4",
-      "cName": "Random",
-      "cImage": "",
-      "cLocation": "Empty shelter example",
-      "cPhone": "No one knows",
-      "cRating": "0🌟",
+      "cName": "Dog's Paradise",
+      "cImage": "/narnia.jpg",
+      "cLocation": "Narnia, Unknown",
+      "cPhone": "Telepathy",
+      "cRating": "5🌟",
       "pet": [
       ]
     }
