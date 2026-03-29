@@ -14,6 +14,9 @@ router.get('/dashboard', dashboard.createView);
 router.get('/dogs/:id', dogs.createView)
 router.get('/about', about.createView);
 
+router.post('/dashboard/addshelter', dashboard.addShelter);
+router.post('/dogs/:id/adddog', dogs.addDog);
+
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
 
 export default router;

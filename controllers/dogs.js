@@ -15,6 +15,22 @@ const dogs = {
 
     response.render("dogs", viewData);
   },
+
+  addDog(request, response) {
+    const shelterId = request.params.id;
+    const newDog = {
+      id: uuidv4(),
+      name: request.body.name,
+      breed: request.body.breed,
+      age: request.body.age,
+      gender: request.body.gender,
+      description: request.body.description,
+      image: request.body.image || '/anon.png',
+      posted: new Date().getFullYear(),
+    };
+    petStore.addDog(shelterId, newDog);
+    response.redirect('/dogs/' + shelterId);
+  },
 };
 
 export default dogs;
