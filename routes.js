@@ -18,6 +18,7 @@ router.post('/dashboard/addshelter', dashboard.addShelter);
 router.post('/dogs/:id/adddog', dogs.addDog);
 
 router.get('/dashboard/deleteshelter/:id', dashboard.deleteShelter);
+router.get('/dogs/:id/deletedog/:dogid', dogs.deleteDog);
 
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
 

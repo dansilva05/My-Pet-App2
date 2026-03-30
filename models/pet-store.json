@@ -91,18 +91,7 @@
       "cLocation": "Narnia, Unknown",
       "cPhone": "Telepathy",
       "cRating": "5🌟",
-      "pet": [
-        {
-          "id": "4acdb027-af03-480b-993d-c7936bfe3654",
-          "name": "chgvbj",
-          "breed": "gvhgn",
-          "age": "432",
-          "gender": "Male",
-          "description": "sglrvdbskdvskrjvbkbrvskdbgrvwkze,reibgaervgelvsegrt,heragesnm;rtb,rh,trbsrh",
-          "image": "/anon.png",
-          "posted": 2026
-        }
-      ]
+      "pet": []
     }
   ]
 }

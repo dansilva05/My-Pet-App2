@@ -28,7 +28,9 @@ const petStore = {
     this.store.removeCollection(this.collection, shelter);
   },
 
-  
+  removeDog(shelterId, dogId) {
+    this.store.removeItem(this.collection, shelterId, this.array, dogId);
+  },
 };
 
 export default petStore;

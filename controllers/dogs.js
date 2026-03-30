@@ -32,6 +32,14 @@ const dogs = {
     petStore.addDog(shelterId, newDog);
     response.redirect('/dogs/' + shelterId);
   },
+
+  deleteDog(request, response) {
+    const shelterId = request.params.id;
+    const dogId = request.params.dogid;
+    logger.debug(`Deleting Dog ${dogId} from Shelter ${shelterId}`);
+    petStore.removeDog(shelterId, dogId);
+    response.redirect('/dogs/' + shelterId);  // redirects back to same shelter page
+  },
 };
 
 export default dogs;
