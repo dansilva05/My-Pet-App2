@@ -22,6 +22,13 @@ const petStore = {
   addDog(id, dog) {
     this.store.addItem(this.collection, id, this.array, dog);
   },
+
+  removeShelter(id) {
+    const shelter = this.getShelterById(id);
+    this.store.removeCollection(this.collection, shelter);
+  },
+
+  
 };
 
 export default petStore;

@@ -30,6 +30,13 @@ const dashboard = {
     petStore.addShelter(newShelter);
     response.redirect('/dashboard');
   },
+
+  deleteShelter(request, response) {
+    const shelterId = request.params.id;
+    logger.debug(`Deleting Shelter ${shelterId}`);
+    petStore.removeShelter(shelterId);
+    response.redirect("/dashboard");
+  },
 };
 
 export default dashboard;

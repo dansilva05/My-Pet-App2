@@ -9,7 +9,7 @@
     <div class="ui card">
       <div class="image">
         <a href="/dogs/{{id}}">
-        <img class="ui fluid image" src="{{cImage}}" alt="{{cName}}">
+        <img class="ui fluid image" src="{{cImage}}" alt="{{cName}}" style="max-height:15em;">
         </a>
       </div>
 
@@ -20,6 +20,10 @@
           {{cRating}}<br>
           {{cLocation}}<br>
           {{cPhone}}
+        </div>
+
+        <div class="extra content" style="padding-top: 1em;">
+          <a href="/dashboard/deleteshelter/{{id}}" style="display: flex; justify-content: flex-end;"><i class="ui red trash icon"></i></a>
         </div>
       </div>
     </div>

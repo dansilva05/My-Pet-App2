@@ -103,46 +103,6 @@
           "posted": 2026
         }
       ]
-    },
-    {
-      "id": "79024116-8e1d-4283-969a-815e95b4815b",
-      "cName": "rxfcgty",
-      "cLocation": "g fh",
-      "cPhone": "43656878",
-      "cRating": "5",
-      "cImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JFyVMUGB2hCmAhFXOdCydqzgsCHd2BAzEA&s",
-      "pet": [
-        {
-          "id": "706082ab-7ef1-4a0b-8e91-09077e73629b",
-          "name": "chgvbj",
-          "breed": "eytsbrve",
-          "age": "453",
-          "gender": "Female",
-          "description": "rtmnuybrt",
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhxtx5uOH2FwWtC_-HAnN75PQqBFgfLF9D2w&s",
-          "posted": 2026
-        },
-        {
-          "id": "b3b0d96c-0c3b-48b8-958b-55650339952c",
-          "name": "jghg",
-          "breed": "ryunt",
-          "age": "65",
-          "gender": "Female",
-          "description": "sglrvdbskdvskrjvbkbrvskdbgrvwkze,reibgaervgelvsegrt,heragesnm;rtb,rh,trbsrh",
-          "image": "/anon_dog.jpg",
-          "posted": 2026
-        },
-        {
-          "id": "d5d3a23a-9760-41c0-8cf2-84dfabf87f60",
-          "name": "gh",
-          "breed": "gkv",
-          "age": "78",
-          "gender": "Female",
-          "description": "sglrvdbskdvskrjvbkbrvskdbgrvwkze,reibgaervgelvsegrt,heragesnm;rtb,rh,trbsrh",
-          "image": "/anon_dog.jpg",
-          "posted": 2026
-        }
-      ]
     }
   ]
 }
