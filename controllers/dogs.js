@@ -26,7 +26,7 @@ const dogs = {
       age: request.body.age,
       gender: request.body.gender,
       description: request.body.description,
-      image: request.body.image || '/anon.png',
+      image: request.body.image || '/anon_dog.jpg',
       posted: new Date().getFullYear(),
     };
     petStore.addDog(shelterId, newDog);

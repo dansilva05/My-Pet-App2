@@ -1,0 +1,35 @@
+<form class="ui stacked segment form" action="/dogs/{{shelter.id}}/adddog" method="POST">
+  <div class="three fields">
+    <div class="field">
+      <label>Name</label>
+      <input type="text" name="name" autofocus required placeholder="Name">
+    </div>
+    <div class="field">
+      <label>Breed</label>
+      <input type="text" name="breed" required placeholder="Breed">
+    </div>
+    <div class="field">
+      <label>Gender</label>
+      <select name="gender" required>
+        <option value="">Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+  </div>
+  <div class="two fields">
+    <div class="field">
+      <label>Age</label>
+      <input type="number" name="age" min="0" required placeholder="Age">
+    </div>
+    <div class="field">
+      <label>Image URL (optional)</label>
+      <input type="text" name="image" placeholder="e.g. /mydog.jpg">
+    </div>
+  </div>
+  <div class="field">
+    <label>Description</label>
+    <input type="text" name="description" required placeholder="Description">
+  </div>
+  <button class="ui yellow submit button">Add Dog</button>
+</form>

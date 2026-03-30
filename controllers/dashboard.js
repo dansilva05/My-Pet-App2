@@ -23,7 +23,8 @@ const dashboard = {
       cLocation: request.body.cLocation,
       cPhone: request.body.cPhone,
       cRating: request.body.cRating,
-      cImage: request.body.cImage || '/anon.png',
+      cImage: request.body.cImage || '/anon_dog.jpg',
+      pet: [],
     };
 
     petStore.addShelter(newShelter);
