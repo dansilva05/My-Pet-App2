@@ -1,0 +1,48 @@
+<div class="ui card" id="edit{{@index}}" style="display:none;">
+  <form class="ui stacked segment form" method="POST"
+        action="/dogs/{{shelterId}}/updatedog/{{id}}">
+
+    <div class="field">
+      <label>Name</label>
+      <input type="text" name="name" required value="{{name}}" placeholder="Name">
+    </div>
+    <div class="two fields">
+      <div class="field">
+        <label>Breed</label>
+        <input type="text" name="breed" required value="{{breed}}" placeholder="Breed">
+      </div>
+      <div class="field">
+        <label>Gender</label>
+        <select name="gender" required>
+          <option value="Male" {{selection gender "Male"}}>Male</option>
+          <option value="Female" {{selection gender "Female"}}>Female</option>
+        </select>
+      </div>
+    </div>
+    <div class="two fields">
+      <div class="field">
+        <label>Age</label>
+        <input type="number" name="age" min="0" required value="{{age}}">
+      </div>
+      <div class="field">
+        <label>Image URL</label>
+        <input type="text" name="image" value="{{image}}" placeholder="e.g. /mydog.jpg">
+      </div>
+    </div>
+    <div class="field">
+      <label>Description</label>
+      <input type="text" name="description" required value="{{description}}">
+    </div>
+    <input type="hidden" name="posted" value="{{posted}}">
+
+    <div style="display:flex; justify-content:flex-end; gap:0.5em; padding: 0.5em;">
+      <button type="reset" class="ui icon button" id="hideEdit{{@index}}" title="Exit without saving">
+        <i class="ui undo icon"></i>
+      </button>
+      <button type="submit" class="ui icon yellow button" title="Save changes">
+        <i class="ui save icon"></i>
+      </button>
+    </div>
+
+  </form>
+</div>

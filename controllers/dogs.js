@@ -38,7 +38,25 @@ const dogs = {
     const dogId = request.params.dogid;
     logger.debug(`Deleting Dog ${dogId} from Shelter ${shelterId}`);
     petStore.removeDog(shelterId, dogId);
-    response.redirect('/dogs/' + shelterId);  // redirects back to same shelter page
+    response.redirect('/dogs/' + shelterId);
+  },
+
+  updateDog(request, response) {
+    const shelterId = request.params.id;
+    const dogId = request.params.dogid;
+    logger.debug("Updating dog " + dogId);
+    const updatedDog = {
+        id: dogId,
+        name: request.body.name,
+        breed: request.body.breed,
+        age: request.body.age,
+        gender: request.body.gender,
+        description: request.body.description,
+        image: request.body.image || '/anon_dog.jpg',
+        posted: request.body.posted,
+    };
+    petStore.editDog(shelterId, dogId, updatedDog);
+    response.redirect('/dogs/' + shelterId);
   },
 };
 

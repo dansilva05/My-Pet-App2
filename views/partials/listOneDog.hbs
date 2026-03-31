@@ -1,0 +1,30 @@
+<div class="ui card" id="dog{{@index}}">
+        <div class="image">
+            <img class="ui fluid image" src="{{image}}" alt="{{name}}" style="max-height:15em;">
+        </div>
+
+        <div class="content">
+            <div class="header">{{name}}</div>
+            <div class="description">{{description}}</div>
+
+            <div class="meta">
+                Breed: {{breed}}<br>
+                Gender: {{gender}}<br>
+                Age: {{age}}
+            </div>
+        </div>
+
+        <div class="extra content">
+            Posted in {{posted}}
+        </div>
+
+        <div class="extra content" style="padding-top: 1em; display: flex; justify-content: flex-end;">
+            <button id="showEdit{{@index}}" title="Edit dog" style="margin: 0 1em 0 1em;">
+                <i class="ui blue pencil icon"></i>
+            </button>
+
+            <a href="/dogs/{{../shelter.id}}/deletedog/{{id}}" style="margin: 0.1em 1em 0 1em;">
+            <i class="ui red trash icon"></i>
+            </a>
+        </div>
+    </div>

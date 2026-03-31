@@ -11,7 +11,13 @@ const port = 3000;
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false, }));
 
-const handlebars = create({extname: '.hbs'});
+const handlebars = create({
+  extname: '.hbs', 
+    helpers: {
+        selection: (a, b) => a === b ? 'selected' : '',
+    },
+});
+
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs");
 
