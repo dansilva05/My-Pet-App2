@@ -6,7 +6,7 @@
       "cImage": "/byrnes.jpg",
       "cLocation": "Waterford",
       "cPhone": "087 124 7255",
-      "cRating": "4.9🌟",
+      "cRating": 4.9,
       "pet": [
         {
           "id": 21,
@@ -46,7 +46,7 @@
       "cImage": "/carlow.jpg",
       "cLocation": "Waterford",
       "cPhone": "059 972 6785",
-      "cRating": "4.3🌟",
+      "cRating": 4.3,
       "pet": [
         {
           "id": 31,
@@ -76,7 +76,7 @@
       "cImage": "/limeerick.jpg",
       "cLocation": "Limerick",
       "cPhone": "063 91110",
-      "cRating": "4.7🌟",
+      "cRating": 4.7,
       "pet": [
         {
           "id": "34",
@@ -96,7 +96,7 @@
       "cImage": "/narnia.jpg",
       "cLocation": "Narnia, Unknown",
       "cPhone": "Telepathy",
-      "cRating": "5🌟",
+      "cRating": 5,
       "pet": []
     }
   ]

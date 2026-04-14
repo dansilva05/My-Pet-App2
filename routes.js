@@ -22,6 +22,9 @@ router.get('/dogs/:id/deletedog/:dogid', dogs.deleteDog);
 
 router.post('/dogs/:id/updatedog/:dogid', dogs.updateDog);
 
+router.get('/search', dashboard.createView);
+router.get('/sortData', dashboard.createView);
+
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
 
 export default router;

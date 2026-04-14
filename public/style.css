@@ -85,5 +85,18 @@ header {
 #search {
     border: solid 2px #ffd500;
     border-radius: 100000px;
-    padding: 5px 50px 5px 10px;
+    padding: 5px 30px 5px 10px;
+}
+
+#sort, #order {
+    border: solid 2px #ffd500;
+    border-radius: 100000px;
+    padding: 5px 0 5px 5px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
 }

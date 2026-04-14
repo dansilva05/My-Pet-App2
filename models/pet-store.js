@@ -35,6 +35,14 @@ const petStore = {
   editDog(shelterId, dogId, updatedDog) {
     this.store.editItem(this.collection, shelterId, dogId, this.array, updatedDog);
   },
+
+ // Will make it better later
+  searchShelter(search) {
+    return this.store.findBy(
+      this.collection,
+      (shelter => shelter.cName.toLowerCase().includes(search.toLowerCase()))
+    )
+  }
 };
 
 export default petStore;

@@ -1,6 +1,32 @@
-  
-    <h2>Find Your Fluffy Friend</h2>
-      <input id="search" type="text" placeholder="Search" style="margin: 0px 0px 30px 30px;">
+  <section class="dashboard-header">
+
+  <h2 class="title">Find Your Fluffy Friend</h2>
+
+    <form action="/search" method="GET" class="ui form">
+
+    <div class="ui inline fields">
+      <div class="field">
+        <input id="search" type="text" name="searchTerm" placeholder="Search by title..." value="{{searched}}">
+      </div>   
+
+      <div class="field">
+        <label>Sort by:</label>
+        <select id="sort" class="ui dropdown" name="sort" onchange="this.form.submit()">
+          <option value="name" {{#if nameSelected}}selected{{/if}}>Name</option>
+          <option value="rating" {{#if ratingSelected}}selected{{/if}}>Rating</option>
+        </select>         
+      </div>
+
+      <div class="field">
+        <label>Order:</label>
+        <select id="order" class="ui dropdown" name="order" onchange="this.form.submit()">
+          <option value="asc" {{#if ascSelected}}selected{{/if}}>↑</option>
+          <option value="desc" {{#if descSelected}}selected{{/if}}>↓</option>
+        </select>
+      </div>
+      </div>
+    </form>
+  </section>
 
     <div class="ui three stackable cards">
   {{#each shelter}}
