@@ -4,6 +4,9 @@
   "description": "CA1 starter app",
   "type": "module",
   "main": "server.js",
+  "engines": {
+    "node": ">=22.22.2"
+  },
   "scripts": {
     "start": "nodemon server.js"
   },
