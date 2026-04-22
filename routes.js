@@ -8,11 +8,13 @@ import start from './controllers/start.js';
 import dashboard from './controllers/dashboard.js';
 import dogs from './controllers/dogs.js';
 import about from './controllers/about.js';
+import stats from './controllers/stats.js';
 
 router.get('/', start.createView);
 router.get('/dashboard', dashboard.createView);
 router.get('/dogs/:id', dogs.createView)
 router.get('/about', about.createView);
+router.get('/stats', stats.createView);
 
 router.post('/dashboard/addshelter', dashboard.addShelter);
 router.post('/dogs/:id/adddog', dogs.addDog);
