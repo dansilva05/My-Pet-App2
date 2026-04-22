@@ -42,7 +42,17 @@ const petStore = {
       this.collection,
       (shelter => shelter.cName.toLowerCase().includes(search.toLowerCase()))
     )
-  }
+  },
+
+  getUserShelters(userid) {
+  return this.store.findBy(this.collection, (shelter => shelter.userid === userid));
+},
+
+searchUserShelters(search, userid) {
+  return this.store.findBy(
+    this.collection,
+    (playlist => playlist.userid === userid && playlist.title.toLowerCase().includes(search.toLowerCase())))
+}
 };
 
 export default petStore;

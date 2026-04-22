@@ -9,6 +9,7 @@ import dashboard from './controllers/dashboard.js';
 import dogs from './controllers/dogs.js';
 import about from './controllers/about.js';
 import stats from './controllers/stats.js';
+import accounts from './controllers/accounts.js';
 
 router.get('/', start.createView);
 router.get('/dashboard', dashboard.createView);
@@ -26,6 +27,12 @@ router.post('/dogs/:id/updatedog/:dogid', dogs.updateDog);
 
 router.get('/search', dashboard.createView);
 router.get('/sortData', dashboard.createView);
+
+router.get('/login', accounts.login);
+router.get('/signup', accounts.signup);
+router.get('/logout', accounts.logout);
+router.post('/register', accounts.register);
+router.post('/authenticate', accounts.authenticate);
 
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
 

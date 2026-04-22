@@ -1,23 +1,42 @@
-<nav class="ui stackable menu">
-  
-  <header class="ui header item">
-    <a class="brand" href="/"><img class="brand-logo" src="/dog_logo.png" alt="My Pet App" style="width:4em; height:auto;">
-    <span class="brand-text">My Pet App</span>
-    </a>
+<nav class="ui menu">
 
-    <div class="dropdown">
-      <img class="dropdown-img" src="/menu.png" alt="Menu">
-      <div class="dropdown-content">
-        <a id="start" class="item" href="/"> Home </a>
-        <a id="dashboard" class="item" href="/dashboard"> Your Next Pet </a>
-        <a id="about" class="item" href="/about"> About Us </a>
-        <a id="stats" class="item" href="/stats"> Statistics  </a>
+  <a class="header item brand" href="/">
+    <img class="brand-logo" src="/dog_logo.png" alt="My Pet App" style="width:4em; height:auto;">
+    <span class="brand-text">My Pet App</span>
+  </a>
+
+  <div class="right menu">
+
+    <div class="item">
+      <div class="dropdown">
+        <img class="dropdown-img" src="/menu.png" alt="Menu">
+        <div class="dropdown-content">
+          <a id="start" class="item" href="/"> Home </a>
+          <a id="dashboard" class="item" href="/dashboard"> Your Next Pet </a>
+          <a id="about" class="item" href="/about"> About Us </a>
+          <a id="stats" class="item" href="/stats"> Statistics </a>
+        </div>
       </div>
     </div>
-  </header>
-  
+
+    <div class="item">
+      <div class="dropdown">
+        <i class="ui yellow user icon"></i>
+        <span class="name">{{user.firstName}}</span>
+        <div class="dropdown-content">
+          {{#unless user.id}}
+            {{> notLogged}}
+          {{else}}
+            {{> logged}}
+          {{/unless}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 </nav>
 
 <script>
- document.querySelector("#{{id}}").classList.add("active");
+  document.querySelector("#{{id}}").classList.add("active");
 </script>

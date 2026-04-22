@@ -12,8 +12,8 @@
     </div>
     <div class="field">
         <label>Phone number</label>
-        <input type="number" name="cPhone" required title = "Please include a valid phone number"
-	  placeholder="Phone Number">
+        <input type="text" name="cPhone" pattern="\+?\d+( \d+)*" required title = "Please include a valid phone number"
+	  placeholder="e.g. +55 4355 3453">
     </div>
     <div class="field">
         <label>Rating (1-5)</label>
@@ -22,7 +22,7 @@
     </div>
     <div class="field">
         <label>Image URL (optinal)</label>
-        <input type="text" name="cImage" required title = "Please include a valid image URL"
+        <input type="text" name="cImage" title = "Please include a valid image URL"
 	  placeholder="Optional image">
     </div>
   </div>

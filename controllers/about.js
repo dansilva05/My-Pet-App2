@@ -1,18 +1,26 @@
 import logger from "../utils/logger.js";
 import appStore from "../models/app-store.js"
+import accounts from './accounts.js';
 
 'use Strict';
 
 const about = {
   createView(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     logger.info("About page loading!");
 
+    if (loggedInUser) {
     const viewData = {
+      user: loggedInUser,
       title: "About Your Pet App",
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
       info: appStore.getAppInfo(),
     };
 
-    response.render('about', viewData);   
+    response.render('about', viewData);  
+  } 
+  
+  else response.redirect('/') 
   },
 };
 

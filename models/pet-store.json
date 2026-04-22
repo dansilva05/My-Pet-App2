@@ -1,6 +1,7 @@
 {
   "shelters": [
     {
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "id": "1",
       "cName": "Byrne's Boarding Kennels",
       "cImage": "/byrnes.jpg",
@@ -29,18 +30,19 @@
           "description": "'The Destroyer' hahaha, the only thing he does is melt our hearts with love🥹"
         },
         {
-          "id": "21",
+          "id": 23,
           "name": "Sir Cookies doppelgänger",
-          "breed": "gfhdxcgh",
-          "age": "65",
-          "gender": "Male",
-          "description": "A love-dovey cutizie boy. A little round, but that's just more of him to enjoy. (DO NOT TRUST)",
           "image": "/chubbz.jpg",
-          "posted": "2016"
+          "posted": 2016,
+          "age": 65,
+          "gender": "Male",
+          "breed": "Unknown",
+          "description": "A love-dovey cutizie boy. A little round, but that's just more of him to enjoy. (DO NOT TRUST)"
         }
       ]
     },
     {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "id": "2",
       "cName": "Carlow Kilkenny Dog Shelter",
       "cImage": "/carlow.jpg",
@@ -71,6 +73,7 @@
       ]
     },
     {
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "id": "3",
       "cName": "Limerick Animal Welfare Sanctuary",
       "cImage": "/limeerick.jpg",
@@ -79,24 +82,36 @@
       "cRating": 4.7,
       "pet": [
         {
-          "id": "34",
+          "id": 34,
           "name": "Silvester",
-          "breed": "Unknown",
-          "age": "11",
-          "gender": "Male",
-          "description": "A senior citizen looking for comfortable and loving home to live. The most sweet company you can have on a rainy day🥹",
           "image": "/silvester.jpg",
-          "posted": "2020"
+          "posted": 2020,
+          "age": 11,
+          "gender": "Male",
+          "breed": "Unknown",
+          "description": "A senior citizen looking for comfortable and loving home to live. The most sweet company you can have on a rainy day🥹"
         }
       ]
     },
     {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "id": "4",
       "cName": "Dog's Paradise",
       "cImage": "/narnia.jpg",
       "cLocation": "Narnia, Unknown",
       "cPhone": "Telepathy",
       "cRating": 5,
+      "pet": []
+    },
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "b03a2018-0dcc-497d-8c91-d250e6fcc176",
+      "cName": "hhhhhhhhhhhh",
+      "cLocation": "bf",
+      "cPhone": "+55 545 54543",
+      "cRating": "2",
+      "cImage": "/anon_dog.jpg",
+      "date": "2026-04-22T15:59:26.634Z",
       "pet": []
     }
   ]
