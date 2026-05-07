@@ -55,7 +55,7 @@ const dashboard = {
     response.render('dashboard', viewData);
   }
 
-  else response.redirect('/');
+  else response.redirect('/login');
   },
 
   addShelter(request, response) {

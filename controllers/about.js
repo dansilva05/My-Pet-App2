@@ -9,18 +9,14 @@ const about = {
     const loggedInUser = accounts.getCurrentUser(request);
     logger.info("About page loading!");
 
-    if (loggedInUser) {
     const viewData = {
       user: loggedInUser,
       title: "About Your Pet App",
-      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      fullname: loggedInUser ? loggedInUser.firstName + ' ' + loggedInUser.lastName : '',
       info: appStore.getAppInfo(),
     };
 
-    response.render('about', viewData);  
-  } 
-  
-  else response.redirect('/') 
+    response.render('about', viewData);
   },
 };
 
