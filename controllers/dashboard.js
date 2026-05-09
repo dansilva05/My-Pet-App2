@@ -15,7 +15,7 @@ const dashboard = {
     const searchTerm = request.query.searchTerm || "";
 
     const shelter = searchTerm 
-    ? petStore.searchShelter(searchTerm, loggedInUser.id) 
+    ? petStore.searchUserShelters(searchTerm, loggedInUser.id) 
     : petStore.getUserShelters(loggedInUser.id);
 
     const sortField = request.query.sort;
